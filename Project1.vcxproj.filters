@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleMenus.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="Course.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="CourseManager.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UserManager.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleMenus.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="Admin.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="libs.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="Course.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="CourseManager.h">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
