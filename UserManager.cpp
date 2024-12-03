@@ -87,7 +87,7 @@ void UserManager::view_courses() const {
     }
 }
 
-Course* UserManager::get_course(const string& course_name) {
+Course* UserManager::get_courses(const string& course_name) {
     for (auto& course : courses) {
         if (course.course_name == course_name) {
             return &course;
@@ -103,4 +103,9 @@ bool UserManager::course_exists(const string& course_name) const {
         }
     }
     return false;
+}
+
+vector<Course> UserManager::get_courses() const
+{
+    return vector<Course>();
 }

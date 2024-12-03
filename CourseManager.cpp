@@ -53,7 +53,7 @@ void CourseManager::view_courses() const {
     }
 }
 
-vector<Course> CourseManager::get_courses() const {
+vector<Course> CourseManager::get_courses() {
     return courses;
 }
 

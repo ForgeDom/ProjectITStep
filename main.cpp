@@ -41,7 +41,7 @@ int main() {
             cout << "¬вед≥ть пароль: ";
             cin >> password;
             if (admins_manager.login_user(username, password)) {
-                admin_menu(teachers_manager);  
+                admin_menu(teachers_manager, course_manager);  
             }
             break;
         case 2:

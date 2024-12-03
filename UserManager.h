@@ -25,6 +25,8 @@ public:
 
     // Переглянути курси
     void view_courses() const;
+    Course* get_courses(const string& course_name);
     bool course_exists(const string& course_name) const;
+    vector<Course> get_courses() const;
 };
 #endif // USER_MANAGER_H

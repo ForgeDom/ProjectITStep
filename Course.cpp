@@ -27,6 +27,15 @@ void Course::add_student(const string& student_name) {
         cout << "Студент вже є на курсі.\n";
     }
 }
+void Course::remove_student(const string& student_name) {
+    if (student_grades.find(student_name) != student_grades.end()) {
+        student_grades.erase(student_name);
+        cout << "Студента " << student_name << " успішно видалено з курсу " << course_name << ".\n";
+    }
+    else {
+        cout << "Студента " << student_name << " не знайдено на курсі " << course_name << ".\n";
+    }
+}
 
 void Course::view_students() const {
     cout << "Студенти на курсі " << course_name << ":\n";

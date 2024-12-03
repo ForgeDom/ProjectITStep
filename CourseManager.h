@@ -17,7 +17,7 @@ public:
     void save_courses();  // Зберегти курси у файл
     void view_courses() const;  // Переглянути всі курси
     Course* get_course(const string& name);  // Отримати курс по назві
-    vector<Course> get_courses() const;
+    vector<Course> get_courses();
 };
 
 #endif
