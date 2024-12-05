@@ -5,8 +5,8 @@
 
 class Course {
 public:
-    string course_name;  // Назва курсу
-    map<string, int> student_grades;  // Список студентів та їхні оцінки
+    string course_name; 
+    map<string, int> student_grades;  
 
     Course(const string& name) : course_name(name) {}
 
@@ -15,5 +15,7 @@ public:
     void add_student(const string& student_name);
     void remove_student(const string& student_name);
     void view_students() const;
+    void save_to_file(const string& filename);
+    void load_from_file(const string& filename);
 };
 #endif

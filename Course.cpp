@@ -20,7 +20,7 @@ void Course::view_grades() const {
 
 void Course::add_student(const string& student_name) {
     if (student_grades.find(student_name) == student_grades.end()) {
-        student_grades[student_name] = 0;  // Початкова оцінка 0
+        student_grades[student_name] = 0; 
         cout << "Студента " << student_name << " додано до курсу.\n";
     }
     else {

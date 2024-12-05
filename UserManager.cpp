@@ -87,14 +87,6 @@ void UserManager::view_courses() const {
     }
 }
 
-Course* UserManager::get_courses(const string& course_name) {
-    for (auto& course : courses) {
-        if (course.course_name == course_name) {
-            return &course;
-        }
-    }
-    return nullptr; 
-}
 
 bool UserManager::course_exists(const string& course_name) const {
     for (const auto& course : courses) {

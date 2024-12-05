@@ -13,10 +13,10 @@ public:
     CourseManager(const string& file) : filename(file) {
         load_courses();
     }
-    void add_course(const string& name);  // Додати новий курс
-    void save_courses();  // Зберегти курси у файл
-    void view_courses() const;  // Переглянути всі курси
-    Course* get_course(const string& name);  // Отримати курс по назві
+    void add_course(const string& name);  
+    void save_courses(); 
+    void view_courses() const;  
+    Course* get_course(const string& name); 
     vector<Course> get_courses();
 };
 

@@ -54,9 +54,8 @@
 
         cout << "Студента " << student_username << " успішно видалено з файлу.\n";
 
-        // Видалення студента з усіх курсів
         for (auto& course : course_manager.get_courses()) {
-            course.remove_student(student_username);  // Видалення студента з кожного курсу
+            course.remove_student(student_username);  
         }
     }
 
@@ -144,8 +143,8 @@
             cout << "1. Додати викладача\n";
             cout << "2. Переглянути викладачів\n";
             cout << "3. Видалити викладача\n";
-            cout << "4. Переглянути студентів\n";  // Додано
-            cout << "5. Видалити студента\n";     // Додано
+            cout << "4. Переглянути студентів\n"; 
+            cout << "5. Видалити студента\n";    
             cout << "6. Вийти\n";
             cout << "Ваш вибір: ";
             int choice;
@@ -169,13 +168,13 @@
                 delete_teacher(username);
             }
             else if (choice == 4) {
-                view_students(); // Перегляд студентів
+                view_students(); 
             }
             else if (choice == 5) {
                 string student_username;
                 cout << "Введіть ім'я студента, якого потрібно видалити: ";
                 cin >> student_username;
-                delete_student(student_username, course_manager); // Видалення студента
+                delete_student(student_username, course_manager); 
             }
             else if (choice == 6) {
                 cout << "Вихід з меню адміністратора.\n";
@@ -195,7 +194,7 @@
         cout << "1. Додати курс\n";
         cout << "2. Переглянути курси\n";
         cout << "3. Додати студента до курсу\n";
-        cout << "4. Переглянути студентів на курсі\n";  // Перегляд студентів
+        cout << "4. Переглянути студентів на курсі\n";  
         cout << "5. Встановити оцінку студенту\n";
         cout << "6. Вийти\n";
         cout << "Ваш вибір: ";
@@ -234,7 +233,7 @@
             getline(cin, course_name);
             Course* course = course_manager.get_course(course_name);
             if (course) {
-                course->view_students();  // Перегляд студентів
+                course->view_students();  
             }
             else {
                 cout << "Курс не знайдено.\n";
